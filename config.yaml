@@ -1,0 +1,9 @@
+ventory:
+    plugin: SimpleInventory
+    options:
+        host_file: "F:/NORNIR/hosts.yaml"
+        group_file: "F:/NORNIR/groups.yaml"
+nner:
+plugin: threaded
+options:
+    num_workers: 20

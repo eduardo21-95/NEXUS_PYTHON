@@ -1,0 +1,33 @@
+vlan 16
+name test16
+exit
+vlan 17
+name test17
+exit
+vlan 18
+name test18
+exit
+interface vlan 16
+description config con Nornir
+ip add 192.168.16.1/24
+exit
+interface vlan 17
+description config con Nornir
+ip add 192.168.17.1/24
+exit
+interface vlan 18
+description config con Nornir
+ip add 192.168.18.1/24
+exit
+interface ethernet 1/16
+sw mode access
+sw access vlan 16
+exit
+interface ethernet 1/17
+sw mode access
+sw access vlan 17
+exit
+interface ethernet 1/18
+sw mode access
+sw access vlan 18
+exit
